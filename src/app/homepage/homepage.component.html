@@ -1,0 +1,21 @@
+<main>
+    <section>
+        <h3>Hi, {{user.name}}</h3>
+        <hr>
+        <div class="main-info">
+            <h6 class="disabled">CURRENT BALANCE</h6>
+            <h6 class="disabled" style="text-align: right;">CURRENT BTC USD</h6>
+            <span>
+                <h5>BIT: Ƀ{{user.coins}}</h5>
+                <h5>USD: ${{value | number :'1.0-0'}}</h5>
+            </span>
+            <h1 style="text-align: right;">{{value|number}}</h1>
+        </div>
+    </section>
+    <app-chart [lineColor]="'#ffc83f'" [chartData]="chart.values"></app-chart>
+    <!-- <section class="app-contact-details-page"> -->
+
+    <section class="move-list">
+        <app-move-list [moveList]="user.moves" [isContact]="false"></app-move-list>
+    </section>
+</main>

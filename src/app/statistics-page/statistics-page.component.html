@@ -1,0 +1,6 @@
+
+<div *ngFor="let chart of charts" class="chart-container">
+    <h1>{{chart.name}}</h1>
+    <app-chart [lineColor]="chart.lineColor" [chartData]="chart.values"></app-chart>
+    <h4>{{chart.description}}</h4>
+</div>

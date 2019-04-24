@@ -1,0 +1,5 @@
+<form (submit)="onTransferCoins()" class="transfer-to-contact">
+  <h6 [class.hidden]="!error.isActive">{{error.msg}}</h6>
+  <input [(ngModel)]="amount" min="0" max="{{maxCoins}}" name="amount" type="number">
+  <button type="submit">Transfer</button>
+</form>

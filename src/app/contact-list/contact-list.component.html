@@ -1,0 +1,3 @@
+<a *ngFor="let contact of contacts" routerLink="{{contact._id}}">
+<app-contact-preview [contact]="contact"></app-contact-preview>
+</a>

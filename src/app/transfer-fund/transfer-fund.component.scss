@@ -1,0 +1,41 @@
+.transfer-to-contact {
+  margin: 20px auto;
+  text-align: center;
+  input {
+    width: 200px;
+    height: 40px;
+    padding: 10px 60px 10px 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #020f1de8;
+    color: #fff;
+    -webkit-box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.75);
+  }
+  button {
+    margin-left: -50px;
+    height: 40px;
+    width:70px;
+    background-color: rgb(255, 72, 102);
+    color: #fff;
+    border: none;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+  }
+}
+
+h6{
+  margin: 0 auto;
+  color:red;
+  font-weight: 300;
+  text-align:center;
+  box-sizing: content-box;
+}
+
+.hidden{
+  visibility: hidden;
+  // background-color: #fff;
+}

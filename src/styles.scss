@@ -1,1 +1,55 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(110deg, #142d4c 60%, #385170 60%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #fff;
+}
+a{
+  text-decoration: none;
+  color:#fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.disabled{
+  color:rgb(138, 138, 138);
+}
+
+rect text{
+  color:red;
+}
+
+section.move-list{
+  padding: 0;
+  background-color: rgba(10, 19, 3, 0.473);
+  // height:100%;
+  flex:1;
+}
+
+hr {
+  border: 0.6px solid rgb(145, 145, 145);
+}
+
+.app-contact-details-page{
+  display:flex;
+  flex-direction: column;
+}

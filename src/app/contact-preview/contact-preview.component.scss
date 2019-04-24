@@ -1,0 +1,22 @@
+section{
+    width:100%;
+    border-bottom:1px solid rgba(136, 136, 136, 0.329);
+    padding: 5px 10px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 100%;
+    img{
+        width:100%;
+        border-radius:50%;
+        background-color: rgba(0, 0, 0, 0.103);
+    }
+    .contact-preview-info{
+        padding:10px;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        h5{
+            font-weight:400;
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<div class="nav">
+    <a [routerLink]="['/contact']"><h4>Back</h4></a>
+    <h4 (click)="deleteContact()" *ngIf="contact._id">Delete</h4>
+</div>
+
+<form (submit)="addContact($event)">
+  <img src="https://robohash.org/{{imgPath}}" alt="contact">
+  <input [(ngModel)]="contact.name" type="text" name="name" placeholder="Name" required>
+  <input [(ngModel)]="contact.phone" type="text" name="phone" placeholder="Phone" required>
+  <input [(ngModel)]="contact.email" type="email" name="email" placeholder="Email" required>
+  <button type="submit">Save</button>
+</form>
